@@ -13,4 +13,5 @@ __pycache__/
 venv/
 .ipynb_checkpoints/
 
+# 忽略 pycharm 文件
 .idea/
