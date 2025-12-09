@@ -1,7 +1,8 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
 
-model_dir = r"/workspace/user/Models/Qwen/Qwen3-4B-Thinking/"
+# model_dir = r"/workspace/user/Models/Qwen/Qwen3-4B-Thinking/"
+model_dir = r"/workspace/user/Models/LLaMa/Llama-3-8B-Instruct/"
 model = AutoModelForCausalLM.from_pretrained(model_dir)
 tokenizer = AutoTokenizer.from_pretrained(model_dir)
 
