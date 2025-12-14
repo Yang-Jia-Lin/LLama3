@@ -1,7 +1,15 @@
 import requests
 
+
+import os
+from dotenv import load_dotenv
+load_dotenv()
+API_TOKEN = os.getenv("API_TOKEN")
+if not API_TOKEN:
+    raise ValueError("API Key not found!")
+
+
 API_URL = "https://router.huggingface.co/models/Qwen/Qwen2.5-7B-Instruct"
-API_TOKEN = "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"
 
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 payload = {
